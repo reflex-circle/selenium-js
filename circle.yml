@@ -1,3 +1,9 @@
+dependencies:
+  override:
+   - npm -g install mocha
+   - npm -g install expect.js
+
 test:
   override:
    - echo Hello World
+   - mocha googleTest.js --timeout 10000
