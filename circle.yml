@@ -8,7 +8,8 @@ dependencies:
 
 test:
   pre:
-   - java -jar selenium-server-standalone-2.53.0.jar -Dwebdriver.chrome.driver=chromedriver: background: true
+   - java -jar selenium-server-standalone-2.53.0.jar -Dwebdriver.chrome.driver=chromedriver:
+       background: true
    - sleep 10
   override:
    - echo Hello World
