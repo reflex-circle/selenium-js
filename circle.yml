@@ -8,7 +8,8 @@ dependencies:
 
 test:
   pre:
-   - java -jar selenium-server-standalone-2.53.0.jar -Dwebdriver.chrome.driver=chromedriver
+   - java -jar selenium-server-standalone-2.53.0.jar -Dwebdriver.chrome.driver=chromedriver:
+    background: true
   override:
    - echo Hello World
    - mocha googleTest.js --timeout 10000
