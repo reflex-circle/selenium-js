@@ -4,10 +4,11 @@ dependencies:
    - npm -g install selenium-webdriver
    - npm -g install mocha
    - npm -g install expect.js
+   - wget http://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.0.jar
 
 test:
   pre:
-   - java -jar /home/ubuntu/nvm/v0.10.33/lib/selenium-server-standalone-2.53.3.jar -Dwebdriver.chrome.driver=chromedriver
+   - java -jar selenium-server-standalone-2.53.0.jar -Dwebdriver.chrome.driver=chromedriver
   override:
    - echo Hello World
    - mocha googleTest.js --timeout 10000
