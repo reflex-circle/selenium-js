@@ -1,5 +1,6 @@
 dependencies:
   override:
+   - npm -g install npm 
    - npm -g install selenium-webdriver
    - npm -g install mocha
    - npm -g install expect.js
