@@ -12,4 +12,4 @@ dependencies:
 test:
   override:
    - echo Hello World
-   - mocha googleTest.js --timeout 10000
+   - node googleTest.js --timeout 10000
