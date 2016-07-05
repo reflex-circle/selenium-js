@@ -7,7 +7,7 @@ dependencies:
 
 test:
   pre:
-   - java -jar selenium-server-standalone-2.53.3.jar -Dwebdriver.chrome.driver=chromedriver
+   - java -jar /home/ubuntu/nvm/v0.10.33/lib/selenium-server-standalone-2.53.3.jar -Dwebdriver.chrome.driver=chromedriver
   override:
    - echo Hello World
    - mocha googleTest.js --timeout 10000
