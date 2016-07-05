@@ -6,6 +6,8 @@ dependencies:
    - npm -g install expect.js
 
 test:
+  pre:
+   - java -jar selenium-server-standalone-2.53.3.jar -Dwebdriver.chrome.driver=chromedriver
   override:
    - echo Hello World
    - mocha googleTest.js --timeout 10000
